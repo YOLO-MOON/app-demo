@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/group1"
+        />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_toRightOf="@id/pic1"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="下面是你的消息列表，想看见请向下滑动"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_toRightOf="@id/text1"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="7:50"
+        />
+
+</RelativeLayout>
